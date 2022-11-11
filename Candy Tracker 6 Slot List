@@ -1,0 +1,42 @@
+import random
+
+
+cande=[0,0,0,0,0,0]
+
+
+
+def Cande():
+    
+    x = random.randrange(100)
+    
+    
+    y = random.randrange(1,5)
+    
+    
+    if x <= 15:
+        print("Dang you've gotten ",y," butterfingers")
+        cande[0] += y
+    
+    elif x <= 35:
+        print("Dang you've gotten ",y," Hershey's")
+        cande[1] += y
+    
+    elif x <= 70:
+        print("Dang you've gotten ",y," Reese's Peanutbutter cups")
+        cande[2] += y
+    
+    elif x <= 80:
+        print("Dang you've gotten ",y," M&Ms")
+        cande[3] += y
+    
+    elif x <= 98:
+        print("Dang you've gotten ",y," Sour Patch Kids")
+        cande[4] += y
+    
+    else:
+        print("You got a jar of dirt, you got a jar of dirt!")
+        cande[5] += 1
+        
+
+for i in range(5):
+    Cande()
